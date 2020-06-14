@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+body{
+    margin: 0 auto;
+    padding: 0px;   font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+  }
+#todowrap{
+  margin: auto;
+  margin-top: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 5px 5px #ccc;
+  border-radius: 5px;}
+    .form_bg{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding: 20px 40px;
+      background-color: rgb(46, 255, 175);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    #todo-input {
+        width: 80%;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 8px 15px;
+        border-bottom-left-radius: 5px; font-size: 16px;
+    }
+    #btn-add-todo{
+        /* display: inline-table; */
+        text-align: center;
+        width: 20%;
+        line-height: 30px;
+        color: #fff;
+        cursor: pointer;    font-size: 30px;
+    }
+    #todolist{ padding: 15px;}
+    .nodyndropshadow .Checkbox {
+      /* width: 20%;
+      height: 20px;*/
+      position: relative; 
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc; 
+  border-bottom: 1px solid #ccc;padding: 20px;
+    }
+    .Checkbox {
+        /* width: 20%;
+        height: 20px;*/
+        position: relative; 
+        border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc;padding: 20px;
+      }
+      .Checkbox > * {
+        position: absolute;
+      }
+      .Checkbox-visible {
+        border: 1px solid gray;
+        width: 16px;
+        height: 16px;
+        margin-left: -8px;
+        background: #fff;
+        border: 1px solid #dedede;
+        border-radius: 3px;
+      }
+      .Checkbox > input {
+        z-index: 1;
+        opacity: 0;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translatex(-62%) translatey(-60%);
+                transform: translatex(-62%) translatey(-60%);
+        display: block;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+      }
+      .Checkbox > input:checked + .Checkbox-visible {
+        background: #59cb59;
+        border-color: #59cb59;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0nMTQnIHZpZXdCb3g9JzAgMCAxNCAxNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48dGl0bGU+d2hpdGU8L3RpdGxlPjxwYXRoIGQ9J001LjM3OCAxMS4zN0wyIDcuNTlsMS40MzgtMS4yODZMNS4zNzQgOC40N2w1LjE4NS01Ljg0TDEyIDMuOTFsLTYuNjIyIDcuNDYnIGZpbGw9JyNmZmYnLz48L3N2Zz4=);
+      }
+      .Checkbox > input:hover + .Checkbox-visible {
+        border-color: #cccccc;
+      }
+      .Checkbox > input:hover:checked + .Checkbox-visible {
+        border-color: #0ca750;
+      }
+      .Checkbox > input:focus + .Checkbox-visible {
+        border-color: #59cb59;
+      }
+      #todo-list{padding: 12px 0px;}
+.todo-card{
+    display: flex;
+    justify-content: end;
+}      
+.fontwidth{
+    width: 90%;/*border-right: 1px solid #ccc;*/
+     border-top: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc;padding: 20px;
+}
+.nodyndropshadow .faicon{
+  width: 5%;/*border-right: 1px solid #ccc;*/
+   border-top: 1px solid #ccc; 
+  border-bottom: 1px solid #ccc;padding: 20px; border-right:1px solid #ccc ;
+}
+.faicon{
+    width: 5%;/*border-right: 1px solid #ccc;*/
+     border-top: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc;padding: 20px;
+}
+:focus {
+    outline: 0; color: #fff;
+    }
+    .striptxt{text-decoration: line-through; opacity: 0.7;}
+    .nostrpstriptxt{text-decoration: none;}
+/* .todo-card > div{ border-bottom: ;} */
+.dyndropshadow{
+  width: 460px;
+    box-shadow: 1px 2px 5px 0px #ccc
+}
+.nodyndropshadow{
+  width: 460px;
+}
+.cut:hover {
+  color: rgb(255, 0, 119);    cursor: pointer;
+}
+.faicon i{ cursor: pointer;}
+.todo-day{color: #2effaf;}

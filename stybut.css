@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ff9d00;
+    background-image: url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 10% auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+#container {
+    width: 100%;
+    padding: 20px 0 0 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+label {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+span {
+    margin-right: 5px;
+}
+
+input {
+    outline: unset;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+input[type="color"] {
+    cursor: pointer;
+}
+
+input[type="number"] {
+    width: 50px;
+}
+
+input[type="text"], input[type="number"] {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+button {
+    outline: unset;
+}
+
+#test-button {
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#generate {
+    border: 0;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #000;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#generate:hover {
+    opacity: 0.7;
+}
+
+#result {
+    background-color: #fff;
+    color: #000;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #000;
+    transform: translate(-50%,-50%);
+    z-index: 50;
+    padding: 20px;
+    letter-spacing: 1.2px;
+    line-height: 1.4;
+}
+
+#result h2 {
+    margin-bottom: 0;
+}
+
+#result p {
+    margin: 0;
+}
+
+#cssText {
+    text-align: justify;
+
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0.8;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#close {
+    cursor: pointer;
+    position: absolute;
+    top: 6%;
+    right: 3%;
+    width: 20px;
+    height: 20px;
+    display: block;
+    transition: all 0.2s;
+}
+
+#bar1, #bar2 {
+    background-color: #000;
+    width: 22px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+
+#bar1 {
+    transform: rotate(45deg);
+}
+
+#bar2 {
+    transform: rotate(315deg);
+}
+
+#close:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1280px) {
+    span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    label {
+        margin-bottom: 20px;
+    }
+
+    label:nth-child(4) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    label:nth-child(4) span {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #container {
+        width: 100%;
+    }
+    span {
+        font-size: 14px;
+    }
+
+    main {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #result {
+        width: 70%;
+    }
+
+    #result p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 88%;
+    }
+    label:first-of-type {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    label:first-of-type span {
+        margin-bottom: 10px;
+    }
+
+    input[type="number"] {
+        width: 40px;
+    }
+
+    #result {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #result p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #result {
+        width: 86%;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    main {
+        width: 90%;
+        padding: 20px 5px;
+    }
+
+    label {
+        margin-right: 0;
+    }
+    
+    #result, #cssText {
+        text-align: center;
+    }
+
+    #result h2 {
+        margin: 0;
+    }
+
+}
